@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="git://github.org/hendersa/" name="bbbandroid"/>  
+  <remote fetch="git://github.com/hendersa/" name="bbbandroid"/>  
   
   <!-- Specify all of the BBBAndroid components -->
   <project name="bbbandroid-kernel" path="kernel" revision="3.8.13" remote="bbbandroid" />
