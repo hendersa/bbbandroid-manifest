@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="git://github.org/hendersa/" name="hendersa"/>  
+  <remote fetch="git://github.org/hendersa/" name="bbbandroid"/>  
   
   <!-- Specify all of the BBBAndroid components -->
-  <project name="bbbandroid-kernel" path="kernel" revision="3.8.13" />
-  <project name="bbbandroid-u-boot" path="u-boot" revision="v2014.07" />
-  <project name="bbbandroid-vendor-ti-beagleboneblack" path="device/ti/beagleboneblack" />
-  <project name="bbbandroid-build">
+  <project name="bbbandroid-kernel" path="kernel" revision="3.8.13" remote="bbbandroid" />
+  <project name="bbbandroid-u-boot" path="u-boot" revision="v2014.07" remote="bbbandroid"/>
+  <project name="bbbandroid-vendor-ti-beagleboneblack" path="device/ti/beagleboneblack" remote="bbbandroid" />
+  <project name="bbbandroid-build" remote="bbbandroid" >
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
-  <project name="bbbandroid-prebuilts-gcc-linux-x86-arm-arm-gnueabihf-4_7" path="prebuilts/gcc/linux-x86/arm/arm-gnueabihf-4.7"/>
-  <project name="bbbandroid-external-ti_android_utilities" path="external/ti_android_utilities"/>
-  <project name="bbbandroid-external-kernel-headers" path="external/kernel-headers"/>
+  <project name="bbbandroid-prebuilts-gcc-linux-x86-arm-arm-gnueabihf-4_7" path="prebuilts/gcc/linux-x86/arm/arm-gnueabihf-4.7" remote="bbbandroid" />
+  <project name="bbbandroid-external-ti_android_utilities" path="external/ti_android_utilities" remote="bbbandroid" />
+  <project name="bbbandroid-external-kernel-headers" path="external/kernel-headers" remote="bbbandroid" />
 
   <!-- Specify all of the components from the Rowboat project -->
   <remote fetch="git://gitorious.org/rowboat/" name="rowboat"/>
