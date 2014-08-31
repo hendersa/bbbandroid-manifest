@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="git://gitorious.org/rowboat/" name="rowboat"/>
+  <remote fetch="git://github.org/hendersa/" name="hendersa"/>  
+  <default remote="hendersa" sync-j="4"/>
   
-  <default remote="rowboat" revision="rowboat-jb" sync-j="4"/>
-  
-  <!-- Bootloaders and kernel sources for AM335x-based devices -->
-  <project name="kernel" path="kernel" revision="rowboat-am335x-kernel-3.2" />
-  <project name="u-boot" path="u-boot" revision="am335x-v2013.01.01" />
+  <!-- Specify all of the BBBAndroid components -->
+  <project name="bbbandroid-kernel" path="kernel" revision="3.8.13" />
+  <project name="bbbandroid-u-boot" path="u-boot" revision="v2014.07" />
+  <project name="bbbandroid-vendor-ti-beagleboneblack" path="device/ti/beagleboneblack" />
+  <project name="bbbandroid-build">
+    <copyfile dest="Makefile" src="core/root.mk"/>
+  </project>
+  <project name="bbbandroid-prebuilts-gcc-linux-x86-arm-arm-gnueabihf-4_7" path="prebuilts/gcc/linux-x86/arm/arm-gnueabihf-4.7"/>
+  <project name="bbbandroid-external-ti_android_utilities" path="external/ti_android_utilities"/>
+  <project name="bbbandroid-external-kernel-headers" path="external/kernel-headers"/>
 
-  <project name="vendor-ti-am335xevm_sk" path="device/ti/am335xevm_sk" />
-  <project name="vendor-ti-beaglebone" path="device/ti/beaglebone" />
-  <project name="vendor-ti-beagleboneblack" path="device/ti/beagleboneblack" />
-  <project name="vendor-ti-am335xevm" path="device/ti/am335xevm" />
+  <!-- Specify all of the components from the Rowboat project -->
+  <remote fetch="git://gitorious.org/rowboat/" name="rowboat"/>
+  <default remote="rowboat" revision="rowboat-jb" sync-j="4"/>
 
   <project name="abi-cpp" path="abi/cpp"/>
   <project name="bionic"/>
   <project name="bootable-bootloader-legacy" path="bootable/bootloader/legacy"/>
   <project name="bootable-diskinstaller" path="bootable/diskinstaller"/>
   <project name="bootable-recovery" path="bootable/recovery"/>
-  <project name="build">
-    <copyfile dest="Makefile" src="core/root.mk"/>
-  </project>
   <project name="cts"/>
   <project name="dalvik"/>
   <project name="development"/>
@@ -93,7 +95,6 @@
   <project name="external-jsilver" path="external/jsilver"/>
   <project name="external-jsr305" path="external/jsr305"/>
   <project name="external-junit" path="external/junit"/>
-  <project name="external-kernel-headers" path="external/kernel-headers"/>
   <project name="external-libcap-ng" path="external/libcap-ng"/>
   <project name="external-libffi" path="external/libffi"/>
   <project name="external-libgsm" path="external/libgsm"/>
@@ -163,7 +164,6 @@
   <project name="external-svox" path="external/svox"/>
   <project name="external-tagsoup" path="external/tagsoup"/>
   <project name="external-tcpdump" path="external/tcpdump"/>
-  <project name="external-ti_android_utilities" path="external/ti_android_utilities"/>
   <project name="external-tinyalsa" path="external/tinyalsa"/>
   <project name="external-tinyxml" path="external/tinyxml"/>
   <project name="external-tinyxml2" path="external/tinyxml2"/>
@@ -210,7 +210,7 @@
   <project name="hardware-libhardware_legacy" path="hardware/libhardware_legacy"/>
   <project name="hardware-ril" path="hardware/ril" revision="rowboat-jb-4.1"/>
   <project name="hardware-ti-omap3" path="hardware/ti/omap3"/>
-  <project name="hardware-ti-sgx" path="hardware/ti/sgx" revision="ti_sgx_sdk-ddk_1.10"/>
+  <!-- <project name="hardware-ti-sgx" path="hardware/ti/sgx" revision="ti_sgx_sdk-ddk_1.10"/> -->
   <project name="hardware-ti-wlan" path="hardware/ti/wlan"/>
   <project name="hardware-ti-wpan" path="hardware/ti/wpan"/>
   <project name="libcore"/>
@@ -281,7 +281,6 @@
   <project name="packages-wallpapers-PhaseBeam" path="packages/wallpapers/PhaseBeam"/>
   <project name="prebuilts-clang-linux-x86-3_1" path="prebuilts/clang/linux-x86/3.1"/>
   <project name="prebuilts-clang-linux-x86-3_2" path="prebuilts/clang/linux-x86/3.2"/>
-  <project name="prebuilts-gcc-linux-x86-arm-arm-eabi-4_6" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.6"/>
   <project name="prebuilts-gcc-linux-x86-arm-arm-linux-androideabi-4_6" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6"/>
   <project name="prebuilts-gcc-linux-x86-host-i686-linux-glibc2_7-4_6" path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6"/>
   <project name="prebuilts-gcc-linux-x86-host-x86_64-linux-glibc2_7-4_6" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6"/>
