@@ -2,18 +2,20 @@
 <manifest>
   <remote fetch="git://github.com/hendersa/" name="bbbandroid"/>  
   
-  <!-- Specify all of the BBBAndroid components -->
+  <!-- BBBAndroid repos that are complete replacements for Rowboat repos -->
   <project name="bbbandroid-kernel" path="kernel" revision="master" remote="bbbandroid" />
   <project name="bbbandroid-u-boot" path="u-boot" revision="master" remote="bbbandroid"/>
+  <project name="bbbandroid-prebuilts-gcc-linux-x86-arm-arm-gnueabihf-4_7" path="prebuilts/gcc/linux-x86/arm/arm-gnueabihf-4.7" revision="master" remote="bbbandroid" />
+  <project name="bbbandroid-external-kernel-headers" path="external/kernel-headers" revision="master" remote="bbbandroid" />
+
+  <!-- Modified BBBAndroid versions of Rowboat repos (rowboat-jb branch) -->
   <project name="bbbandroid-vendor-ti-beagleboneblack" path="device/ti/beagleboneblack" revision="master" remote="bbbandroid" />
   <project name="bbbandroid-build" path="build" remote="bbbandroid" revision="master" >
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
-  <project name="bbbandroid-prebuilts-gcc-linux-x86-arm-arm-gnueabihf-4_7" path="prebuilts/gcc/linux-x86/arm/arm-gnueabihf-4.7" revision="master" remote="bbbandroid" />
   <project name="bbbandroid-external-ti_android_utilities" path="external/ti_android_utilities" revision="master" remote="bbbandroid" />
-  <project name="bbbandroid-external-kernel-headers" path="external/kernel-headers" revision="master" remote="bbbandroid" />
 
-  <!-- Specify all of the components from the Rowboat project -->
+  <!-- Rowboat project repos (rowboat-jb branch) -->
   <remote fetch="git://gitorious.org/rowboat/" name="rowboat"/>
   <default remote="rowboat" revision="rowboat-jb" sync-j="4"/>
 
