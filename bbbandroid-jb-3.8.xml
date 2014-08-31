@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote fetch="git://github.org/hendersa/" name="hendersa"/>  
-  <default remote="hendersa" sync-j="4"/>
   
   <!-- Specify all of the BBBAndroid components -->
   <project name="bbbandroid-kernel" path="kernel" revision="3.8.13" />
