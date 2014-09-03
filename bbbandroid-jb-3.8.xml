@@ -14,7 +14,7 @@
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
   <project name="bbbandroid-external-ti_android_utilities" path="external/ti_android_utilities" revision="master" remote="bbbandroid" />
-  <project name="bbbandroid-system-core" path="system/core"/ revision="master" remote="bbbandroid">
+  <project name="bbbandroid-system-core" path="system/core" revision="master" remote="bbbandroid" />
 
   <!-- Rowboat project repos (rowboat-jb branch) -->
   <remote fetch="git://gitorious.org/rowboat/" name="rowboat"/>
