@@ -16,6 +16,9 @@
   <project name="bbbandroid-external-ti_android_utilities" path="external/ti_android_utilities" revision="master" remote="bbbandroid" />
   <project name="bbbandroid-system-core" path="system/core" revision="master" remote="bbbandroid" />
 
+  <!-- New repos for BBBAndroid -->
+  <project name="bbbandroid-external-i2c_tools" path="external/i2c-tools" revision="master" remote="bbbandroid" />
+
   <!-- Rowboat project repos (rowboat-jb branch) -->
   <remote fetch="git://gitorious.org/rowboat/" name="rowboat"/>
   <default remote="rowboat" revision="rowboat-jb" sync-j="4"/>
