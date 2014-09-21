@@ -24,7 +24,7 @@ o <!-- New repos for BBBAndroid -->
 
   <!-- AOSP repos (android-4.4.4_r1.0.1 branch) -->
   <remote  name="aosp"
-           fetch="https://android/googlesource.com/platform/" />
+           fetch="https://android.googlesource.com/platform/" />
   <default revision="refs/tags/android-4.4.4_r1.0.1"
            remote="aosp"
            sync-j="4" />
