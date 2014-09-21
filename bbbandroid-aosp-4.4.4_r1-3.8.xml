@@ -12,7 +12,7 @@
   <!-- Modified BBBAndroid versions of Rowboat repos (rowboat-jb branch) -->
   <project name="bbbandroid-vendor-ti-beagleboneblack" path="device/ti/beagleboneblack" revision="master" remote="bbbandroid" />
   <project name="bbbandroid-external-ti_android_utilities" path="external/ti_android_utilities" revision="master" remote="bbbandroid" />
-  <project name="bbbandroid-system-core" path="system/core" revision="master" remote="bbbandroid" />
+  <!-- <project name="bbbandroid-system-core" path="system/core" revision="master" remote="bbbandroid" /> -->
 
   <!-- Modified BBBAndroid versions of AOSP repos (android-4.4.4_r1.0.1) -->
   <project name="bbbandroid-build-aosp" path="build" remote="bbbandroid" revision="master" >
@@ -29,9 +29,6 @@ o <!-- New repos for BBBAndroid -->
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="platform/build" groups="pdk" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" />
   <project path="bionic" name="platform/bionic" groups="pdk" />
