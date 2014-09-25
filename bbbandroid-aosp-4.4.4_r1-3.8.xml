@@ -3,16 +3,14 @@
 
   <remote fetch="git://github.com/hendersa/" name="bbbandroid"/>
 
-  <!-- BBBAndroid repos that are complete replacements for Rowboat repos -->
+  <!-- BBBAndroid kernel and bootloader repos -->
   <project name="bbbandroid-kernel" path="kernel" revision="master" remote="bbbandroid" />
   <project name="bbbandroid-u-boot" path="u-boot" revision="master" remote="bbbandroid"/>
-  <project name="bbbandroid-prebuilts-gcc-linux-x86-arm-arm-gnueabihf-4_7" path="prebuilts/gcc/linux-x86/arm/arm-gnueabihf-4.7" revision="master" remote="bbbandroid" />
   <project name="bbbandroid-external-kernel-headers" path="external/kernel-headers" revision="master" remote="bbbandroid" />
 
   <!-- Modified BBBAndroid versions of Rowboat repos (rowboat-jb branch) -->
   <project name="bbbandroid-vendor-ti-beagleboneblack-aosp" path="device/ti/beagleboneblack" revision="master" remote="bbbandroid" />
   <project name="bbbandroid-external-ti_android_utilities" path="external/ti_android_utilities" revision="master" remote="bbbandroid" />
-  <!-- <project name="bbbandroid-system-core" path="system/core" revision="master" remote="bbbandroid" /> -->
 
   <!-- Modified BBBAndroid versions of AOSP repos (android-4.4.4_r1.0.1) -->
   <project name="bbbandroid-build-aosp" path="build" remote="bbbandroid" revision="master" >
