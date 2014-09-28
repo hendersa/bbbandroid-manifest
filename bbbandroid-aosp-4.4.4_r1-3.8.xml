@@ -20,7 +20,7 @@
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
 
-o <!-- New repos for BBBAndroid -->
+  <!-- New repos for BBBAndroid -->
   <project name="bbbandroid-external-i2c_tools" path="external/i2c-tools" revision="master" remote="bbbandroid" />
 
   <!-- AOSP repos (android-4.4.4_r1.0.1 branch) -->
