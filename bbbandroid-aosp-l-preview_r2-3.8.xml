@@ -26,7 +26,7 @@
   <!-- AOSP repos (android-l-preview_r2 branch) -->
   <remote  name="aosp"
            fetch="https://android.googlesource.com/" />
-  <default revision="refs/tags/android-l-preview_r2"
+  <default revision="master"
            remote="aosp"
            sync-j="4" />
 
