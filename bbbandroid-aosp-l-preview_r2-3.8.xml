@@ -15,8 +15,8 @@
   </project>
   <project name="bbbandroid-external-ti_android_utilities" path="external/ti_android_utilities" revision="master" remote="bbbandroid" />
 
-  <!-- Modified BBBAndroid versions of AOSP repos (android-4.4.4_r1.0.1) -->
-  <project name="bbbandroid-build-aosp" path="build" remote="bbbandroid" revision="master" >
+  <!-- Modified BBBAndroid versions of AOSP repos (android-l-preview_r2) -->
+  <project name="bbbandroid-build-aosp-lollipop_p2" path="build" remote="bbbandroid" revision="master" >
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
 
