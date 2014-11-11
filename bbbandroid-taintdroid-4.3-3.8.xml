@@ -275,7 +275,6 @@
   <project name="packages-apps-Tag" path="packages/apps/Tag"/>
   <project name="packages-apps-VideoEditor" path="packages/apps/VideoEditor"/>
   <project name="packages-apps-VoiceDialer" path="packages/apps/VoiceDialer"/>
-  <project name="packages-apps-amazed" path="packages/apps/Amazed"/>
   <project name="packages-experimental" path="packages/experimental"/>
   <project name="packages-inputmethods-LatinIME" path="packages/inputmethods/LatinIME"/>
   <project name="packages-inputmethods-OpenWnn" path="packages/inputmethods/OpenWnn"/>
