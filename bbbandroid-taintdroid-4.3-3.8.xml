@@ -192,7 +192,7 @@
   <project name="external-webrtc" path="external/webrtc"/>
   <project name="external-wpa_supplicant_6" path="external/wpa_supplicant_6"/>
   <project name="external-wpa_supplicant_8" path="external/wpa_supplicant_8"/>
-  <project name="external-wpa_supplicant_8_ti" path="external/wpa_supplicant_8_ti"/>
+  <!-- <project name="external-wpa_supplicant_8_ti" path="external/wpa_supplicant_8_ti"/> -->
   <project name="external-xmlwriter" path="external/xmlwriter"/>
   <project name="external-xmp_toolkit" path="external/xmp_toolkit"/>
   <project name="external-yaffs2" path="external/yaffs2"/>
