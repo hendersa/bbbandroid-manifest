@@ -302,9 +302,15 @@
  <project path="pdk" name="pdk" />
   <project name="prebuilts-clang-linux-x86-3_1" path="prebuilts/clang/linux-x86/3.1"/>
   <project name="prebuilts-clang-linux-x86-3_2" path="prebuilts/clang/linux-x86/3.2"/>
+ <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" name="prebuilts-gcc-linux-x86-arm-arm-eabi-4_6" />
+<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="prebuilts-gcc-linux-x86-arm-arm-eabi-4_7" />
   <project name="prebuilts-gcc-linux-x86-arm-arm-linux-androideabi-4_6" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6"/>
+ <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="prebuilts-gcc-linux-x86-arm-arm-linux-androideabi-4_7" />
+ <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" name="prebuilts-gcc-linux-x86-host-i686-linux-glibc2_7-4_4_3" />
   <project name="prebuilts-gcc-linux-x86-host-i686-linux-glibc2_7-4_6" path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6"/>
   <project name="prebuilts-gcc-linux-x86-host-x86_64-linux-glibc2_7-4_6" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6"/>
+ <project path="prebuilts/gcc/linux-x86/x86/i686-linux-android-4.6" name="prebuilts-gcc-linux-x86-x86-i686-linux-android-4_6" />
+<project path="prebuilts/gcc/linux-x86/x86/i686-linux-android-4.7" name="prebuilts-gcc-linux-x86-x86-i686-linux-android-4_7" />
   <project name="prebuilts-misc" path="prebuilts/misc"/>
   <project name="prebuilts-ndk" path="prebuilts/ndk"/>
   <project name="prebuilts-qemu-kernel" path="prebuilts/qemu-kernel"/>
