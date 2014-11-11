@@ -226,7 +226,6 @@
  <project path="frameworks/volley" name="frameworks-volley" />
 <project path="frameworks/webview" name="frameworks-webview" />
   <project name="frameworks-wilhelm" path="frameworks/wilhelm"/>
-  <project name="gdk"/>
   <project name="hardware-libhardware" path="hardware/libhardware"/>
   <project name="hardware-libhardware_legacy" path="hardware/libhardware_legacy"/>
   <project name="hardware-ril" path="hardware/ril" revision="rowboat-jb-4.1"/>
