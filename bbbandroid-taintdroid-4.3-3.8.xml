@@ -18,6 +18,7 @@
   <!-- Modified Rowboat/TaintDroid repos -->
   <project name="bbbandroid-taintdroid-system-core" path="system/core" revision="master" remote="bbbandroid" />
   <project name="bbbandroid-taintdroid-build" path="build" remote="bbbandroid" revision="master" >
+    <copyfile dest="buildspec.mk" src="buildspec.mk"/>
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
 
